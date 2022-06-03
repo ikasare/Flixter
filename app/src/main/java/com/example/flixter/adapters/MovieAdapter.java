@@ -14,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.example.flixter.MovieDetailsActivity;
 import com.example.flixter.R;
 import com.example.flixter.models.Movie;
@@ -73,6 +74,8 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
         }
 
         public void bind(Movie movie) {
+            int radius = 30;
+            int margin = 10;
             tvTitle.setText(movie.getTitle());
             tvOverview.setText(movie.getOverview());
             String imageUrl;
@@ -85,7 +88,11 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
             // then imageUrl = back drop image
             // else imageUrl = poster image
 
-            Glide.with(context).load(imageUrl).placeholder(R.drawable.flicks_movie_placeholder).into(ivPoster);
+            Glide.with(context).load(imageUrl)
+                    .centerCrop()
+                    .transform(new RoundedCorners(radius))
+                    .placeholder(R.drawable.flicks_movie_placeholder)
+                    .into(ivPoster);
 
         }
 
