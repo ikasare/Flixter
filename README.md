@@ -21,6 +21,10 @@ The following **stretch** features are implemented:
 * [ ] Apply rounded corners for the poster or background images using [Glide transformations](https://guides.codepath.org/android/Displaying-Images-with-the-Glide-Library#transformations)
 * [ ] Apply the popular [View Binding annotation library](http://guides.codepath.org/android/Reducing-View-Boilerplate-with-ViewBinding) to reduce boilerplate code.
 
+The following **additional** features are implemented:
+
+* [ ] A back button has been added to the movie details page!
+
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
