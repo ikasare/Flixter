@@ -23,12 +23,13 @@ import org.parceler.Parcels;
 
 import java.util.List;
 
+// adapters: transforms data visuals
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
 
     Context context;
     List<Movie> movies;
-
-    public MovieAdapter(Context context, List<Movie> movies) {
+    // activities can't access stuff themselves so context helps them to do that
+    public MovieAdapter(Context context, List<Movie> movies) { // (what activity you are inside context is just a reference to an activity; here main activity
         this.context = context;
         this.movies = movies;
     }
