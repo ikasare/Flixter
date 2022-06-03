@@ -19,17 +19,20 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="7dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:fontFamily="More Fonts..."
         android:textSize="24sp"
+        android:textStyle="bold|italic"
         tools:text="Fasr Furious Presents Hoobs Shaw" />
 
     <TextView
         android:id="@+id/tvOverview"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="180dp"
         android:layout_below="@+id/tvTitle"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:fontFamily="@font/amarante"
         tools:text="Prince Amleth is on the verge of becoming a man when his father is brutally murdered by his uncle, who kidnaps the boy's mother. Two decades later, Amleth is now a Viking who's on a mission to save his mother, kill his uncle and avenge his father." />
 
 </RelativeLayout>
