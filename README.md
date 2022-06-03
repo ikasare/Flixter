@@ -20,6 +20,13 @@ The following **stretch** features are implemented:
 * [ ] Improved the user interface by experimenting with styling and coloring.
 * [ ] Apply rounded corners for the poster or background images using [Glide transformations](https://guides.codepath.org/android/Displaying-Images-with-the-Glide-Library#transformations)
 
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+[App Demo Link](screenshots/Flixter.gif)
+
+GIF created with [Kap](https://getkap.co/).
 
 ## Open-source libraries used
 
