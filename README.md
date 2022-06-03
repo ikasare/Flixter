@@ -15,6 +15,11 @@ The following **required** functionality is completed:
   * [ ] Title, Backdrop Image, Overview (Landscape mode)
 * [ ] Allow user to view details of the movie including ratings within a separate activity
 
+The following **stretch** features are implemented:
+
+* [ ] Improved the user interface by experimenting with styling and coloring.
+* [ ] Apply rounded corners for the poster or background images using [Glide transformations](https://guides.codepath.org/android/Displaying-Images-with-the-Glide-Library#transformations)
+
 
 ## Open-source libraries used
 
