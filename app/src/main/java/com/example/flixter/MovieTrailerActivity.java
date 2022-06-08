@@ -12,6 +12,8 @@ import com.google.android.youtube.player.YouTubePlayerView;
 
 public class MovieTrailerActivity extends YouTubeBaseActivity {
 
+    //public static final String NOW_PLAYING_URL = "https://api.themoviedb.org/3/movie/" + + "/videos?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

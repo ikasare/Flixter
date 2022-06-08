@@ -11,7 +11,7 @@ import android.view.View;
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
 import com.example.flixter.adapters.MovieAdapter;
-import com.example.flixter.databinding.ActivityMainBinding;
+//import com.example.flixter.databinding.ActivityMainBinding;
 import com.example.flixter.models.Movie;
 
 import org.json.JSONArray;
@@ -29,16 +29,16 @@ public class MainActivity extends AppCompatActivity {
     public static final String TAG = "MainActivity";
 
     List<Movie> movies;
-    ActivityMainBinding binding;
+    //ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // setContentView(R.layout.activity_main);
-        //RecyclerView rvMovies = findViewById(R.id.rvMovies);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        View view =  binding.getRoot();
-        setContentView(view);
+         setContentView(R.layout.activity_main);
+        RecyclerView rvMovies = findViewById(R.id.rvMovies);
+       // binding = ActivityMainBinding.inflate(getLayoutInflater());
+        //View view =  binding.getRoot();
+        //setContentView(view);
 
 
 
@@ -49,10 +49,10 @@ public class MainActivity extends AppCompatActivity {
         MovieAdapter movieAdapter = new MovieAdapter(this, movies);
 
         // Set the adapter on the recycler view
-        binding.rvMovies.setAdapter(movieAdapter);
+        rvMovies.setAdapter(movieAdapter);
 
         // Set a Layout Manager on the recycler view
-        binding.rvMovies.setLayoutManager(new LinearLayoutManager(this));
+        rvMovies.setLayoutManager(new LinearLayoutManager(this));
 
         AsyncHttpClient client = new AsyncHttpClient();
         client.get(NOW_PLAYING_URL, new JsonHttpResponseHandler() {

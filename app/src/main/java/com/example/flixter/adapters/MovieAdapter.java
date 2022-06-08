@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
+import com.example.flixter.MainActivity;
 import com.example.flixter.MovieDetailsActivity;
 import com.example.flixter.R;
 import com.example.flixter.models.Movie;
@@ -108,7 +109,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
                 // create intent for the new Activity
                 Intent intent = new Intent(context, MovieDetailsActivity.class);
                 // serialize the movie using parceler, use its short name as a key
-                intent.putExtra(Movie.class.getSimpleName(), Parcels.wrap(movie));
+                intent.putExtra(Movie.class.getSimpleName(), Parcels.wrap(movie)); // parcel helps you put thinks more complex; like a whole movie
                 // show activity
                 context.startActivity(intent);
             }

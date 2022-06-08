@@ -1,5 +1,7 @@
 package com.example.flixter.models;
 
+import com.codepath.asynchttpclient.AsyncHttpClient;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -35,6 +37,8 @@ public class Movie {
         }
         return movies;
     }
+
+    //AsyncHttpClient client = new AsyncHttpClient();
 
     public String getPosterPath() {
         return String.format("https://image.tmdb.org/t/p/w342/%s", posterPath);
